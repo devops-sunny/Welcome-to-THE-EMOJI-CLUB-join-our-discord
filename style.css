@@ -243,15 +243,7 @@
         text-align: center
     }
 
-
-    /* emojiclub */
-
-
-
-    /* Team */
-
-    
-.profiles {
+  .profiles {
     display: flex;
     justify-content: space-around;
     margin: 20px 80px;
@@ -262,8 +254,8 @@
   }
   
   .profile .profile-img {
-    height: 260px;
-    width: 260px;
+    height: 219px;
+    width: 240px;
     border-radius: 50%;
     filter: grayscale(100%);
     cursor: pointer;
