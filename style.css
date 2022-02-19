@@ -434,3 +434,8 @@
 
   }
   
+  .sm{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
