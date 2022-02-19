@@ -10,44 +10,121 @@
   }
   /* welcome */
 
-  header {
-    background: linear-gradient(#111, #111);
+  
+#home{
+  height: 100vh;
+  min-height: 500px;
+  background: url(../images/bg.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#home .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+#home .content{
+  width: 100%;
+  color: #fff;
+}
+
+#home .content h1{
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+.sm a{
+  color: rgb(143, 130, 130);
+  font-size: 22px;
+  margin: 0 10px;
+  transition: .2s linear;
+}
+
+.sm a:hover{
+  color: #3e4446;
+}
+
+#home .buttons{
+  margin-top: 60px;
+}
+
+#home .buttons a{
+  display: inline-block;
+  margin: 15px 30px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  border: 1px solid #ffffff;
+  padding: 14px 0;
+  border-radius: 6px;
+  transition: .2s linear;
+}
+
+#home .buttons a:hover,
+#home .buttons a:nth-child(2)
+{
+  background-color: #d9dfe0;
+  color: rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width: 980px){
+  .menu-toggler{
+    display: block;
+  }
+
+  .navbar-menu{
+    position: fixed;
     height: 100vh;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
+    width: 100%;
+    background-color: #353b48;
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    padding: 80px 50px;
+    transition: .3s linear;
   }
 
-  .button {
-    background-color: #474e47;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-
-  .welcome-text {
-    position: absolute;
-    width: 600px;
-    height: 300px;
-    margin: 20% 30%;
-    text-align: center;
-  }
-  .welcome-text h1 {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
+  .navbar-menu a{
+    display: block;
     font-size: 30px;
+    margin: 30px 0;
+  }
+
+  #home .content h1{
+    font-size: 60px;
+  }
+
+  .sticky .navbar-menu{
+    background-color: #f1f1f1;
   }
   
+  .navbar-menu.active{
+    right: 0;
+  }
+
+  .menu-toggler.active span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 4px;
+  }
+
+  .menu-toggler.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .menu-toggler.active span:nth-child(3){
+    transform: rotate(45deg);
+    bottom: 14px;
+  }
+}
+
+
+
 
   /* Road map */
   .container {
@@ -167,64 +244,6 @@
 
 
     /* emojiclub */
-
-    .emojiclub{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px;
-      background: linear-gradient(#111, #111);
-      height: 100vh;
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center center;
-      position: relative;
-    }
-
-    .emojiclub p {
-      font-size: 16px;
-      margin-top: 20px;
-      text-align: justify;
-    }
-    
-    @media only screen and (max-width: 1150px) {
-      .emojiclub {
-        flex-direction: column;
-      }
-    
-      .emojiclub {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      .emojiclub p {
-        text-align: center;
-        margin: 20px 60px 80px 60px;
-        font-size: 20px;
-      }
-    }
-    
-    @media only screen and (max-width: 900px) {
-      .heading {
-        font-size: 40px;
-        color: white;
-        text-align: center;
-      }
-    
-      .emojiclub span {
-        font-size: 15px;
-      }
-    
-      .emojiclub {
-        margin: 20px 0;
-      }
-    
-      .emojiclub p {
-        margin: 20px 10px 80px 10px;
-      }
-    }
-    
 
 
 
