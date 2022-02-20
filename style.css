@@ -594,7 +594,7 @@
       font-size: 0.8rem;
   }
   .features-box:hover{
-      background-color: #f6f6f7;
+      /* background-color: #f6f6f7; */
       transition: all ease 0.3s;
   }
    
