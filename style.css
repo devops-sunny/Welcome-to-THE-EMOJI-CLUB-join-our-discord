@@ -697,10 +697,7 @@
           margin: 20px 10px;
           box-shadow: 2px 2px 30px rgba(0,0,0,0.05);
       }
-      .discordmb{
-        display: none;
-      }
-  }  
+   }  
 
   .weltext{
     color: #daa520;
@@ -708,7 +705,20 @@
   .mt{
     margin-top: 10px;
   }
+  
+  /* button right side */
 
+  @media(max-width:570px){
+    .discordmb{
+      display: none;
+    }
+  }  
+
+  @media(max-width:810px){
+    .discordmb{
+      display: none;
+    }
+  }
 
   #btnScrollTotop{
     position: fixed;
