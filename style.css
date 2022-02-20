@@ -814,3 +814,9 @@ font-size: 1.4em;
 a {
   color: teal;
 }
+
+@media(max-width:570px){
+  .cursor{
+    display: none;
+  }
+}  
