@@ -700,8 +700,28 @@
   }  
 
   .weltext{
-    color: goldenrod;
+    color: #daa520;
   }
   .mt{
     margin-top: 10px;
+  }
+
+
+  #btnScrollTotop{
+    position: fixed;
+    right: 44px;
+    bottom: 49px;
+    width: 114px;
+    height: 101px;
+    border-radius: 50%;
+    background-color: #3e4446;
+    box-shadow: 0 0 10px #111;
+    color: white;
+    outline: none;
+    cursor: pointer;
+  }
+  
+
+  #btnScrollTotop:active{
+    background-color: white;
   }
